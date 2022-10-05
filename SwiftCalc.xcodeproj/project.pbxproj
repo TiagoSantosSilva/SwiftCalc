@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A6789C028ED9213001F1CDB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6789BF28ED9213001F1CDB /* Color.swift */; };
 		9A7774A828EB37D20020C750 /* SwiftCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774A728EB37D20020C750 /* SwiftCalcApp.swift */; };
-		9A7774AA28EB37D20020C750 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774A928EB37D20020C750 /* ContentView.swift */; };
+		9A7774AA28EB37D20020C750 /* SwiftCalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774A928EB37D20020C750 /* SwiftCalcView.swift */; };
 		9A7774AC28EB37D40020C750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7774AB28EB37D40020C750 /* Assets.xcassets */; };
 		9A7774AF28EB37D40020C750 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7774AE28EB37D40020C750 /* Preview Assets.xcassets */; };
 		9A7774B928EB37D40020C750 /* SwiftCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774B828EB37D40020C750 /* SwiftCalcTests.swift */; };
 		9A7774C328EB37D40020C750 /* SwiftCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774C228EB37D40020C750 /* SwiftCalcUITests.swift */; };
 		9A7774C528EB37D40020C750 /* SwiftCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774C428EB37D40020C750 /* SwiftCalcUITestsLaunchTests.swift */; };
+		9A7774D228EB38410020C750 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774D128EB38410020C750 /* DisplayView.swift */; };
+		9A7774D528EB386F0020C750 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7774D428EB386F0020C750 /* MemoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A6789BF28ED9213001F1CDB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9A7774A428EB37D20020C750 /* SwiftCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7774A728EB37D20020C750 /* SwiftCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalcApp.swift; sourceTree = "<group>"; };
-		9A7774A928EB37D20020C750 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A7774A928EB37D20020C750 /* SwiftCalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalcView.swift; sourceTree = "<group>"; };
 		9A7774AB28EB37D40020C750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A7774AE28EB37D40020C750 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A7774B428EB37D40020C750 /* SwiftCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,8 @@
 		9A7774BE28EB37D40020C750 /* SwiftCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7774C228EB37D40020C750 /* SwiftCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalcUITests.swift; sourceTree = "<group>"; };
 		9A7774C428EB37D40020C750 /* SwiftCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9A7774D128EB38410020C750 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
+		9A7774D428EB386F0020C750 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A6789BE28ED920A001F1CDB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A6789BF28ED9213001F1CDB /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9A77749B28EB37D20020C750 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +108,9 @@
 		9A7774A628EB37D20020C750 /* SwiftCalc */ = {
 			isa = PBXGroup;
 			children = (
+				9A6789BE28ED920A001F1CDB /* Extensions */,
+				9A7774D328EB38640020C750 /* Views */,
 				9A7774A728EB37D20020C750 /* SwiftCalcApp.swift */,
-				9A7774A928EB37D20020C750 /* ContentView.swift */,
 				9A7774AB28EB37D40020C750 /* Assets.xcassets */,
 				9A7774AD28EB37D40020C750 /* Preview Content */,
 			);
@@ -125,6 +140,16 @@
 				9A7774C428EB37D40020C750 /* SwiftCalcUITestsLaunchTests.swift */,
 			);
 			path = SwiftCalcUITests;
+			sourceTree = "<group>";
+		};
+		9A7774D328EB38640020C750 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A7774A928EB37D20020C750 /* SwiftCalcView.swift */,
+				9A7774D128EB38410020C750 /* DisplayView.swift */,
+				9A7774D428EB386F0020C750 /* MemoryView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A7774AA28EB37D20020C750 /* ContentView.swift in Sources */,
+				9A7774D228EB38410020C750 /* DisplayView.swift in Sources */,
+				9A7774AA28EB37D20020C750 /* SwiftCalcView.swift in Sources */,
 				9A7774A828EB37D20020C750 /* SwiftCalcApp.swift in Sources */,
+				9A6789C028ED9213001F1CDB /* Color.swift in Sources */,
+				9A7774D528EB386F0020C750 /* MemoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
